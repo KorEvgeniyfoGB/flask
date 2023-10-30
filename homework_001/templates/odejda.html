@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{%for i in odejda%}
+<div class="card">
+    <div class="card-body">
+        <b>Модель</b>
+        <h1><p>{{ i.name_odejda }} </p></h1>
+        <p>Описание</p>
+        <h2><p>{{ i.text_odejda }} </p></h2>
+        <p>Особенности</p>
+        <h3><p>{{ i.date_odejda }} </p></h3>
+    </div>
+</div>
+{%endfor%}
+{% endblock %}

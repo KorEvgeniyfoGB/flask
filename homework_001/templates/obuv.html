@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for i in obuv %}
+<div class="card">
+    <div class="card-body">
+        <b>Модель</b>
+        <h1><p>{{ i.name_obuv }} </p></h1>
+        <p>Описание</p>
+        <h2><p>{{ i.text_obuv }} </p></h2>
+        <p>Особенности</p>
+        <h3><p>{{ i.date_obuv }} </p></h3>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

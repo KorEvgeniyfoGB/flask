@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{%block content%}
+<table class="table table-hover">
+    <thead>
+    <th>Имя</th>
+    <th>Фамилия</th>
+    <th>Возраст</th>
+    <th>Средний балл</th>
+    </thead>
+    <tbody>
+    {%for student in students%}
+    <tr>
+        <td>{{student.name}}</td>
+        <td>{{student.surname}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.raiting}}</td>
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>
+{%endblock%}
