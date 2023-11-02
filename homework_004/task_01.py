@@ -51,7 +51,7 @@ async def get_url_a(url: str):
     async with aiohttp.ClientSession() as s:
         async with s.get(url) as resp:
             async with s.get(url) as responce:
-                with open(f'{url.split("/")[-1]}.jpg', "wb") as f:
+                with open(f'{url.split("/")[-1]}', "wb") as f:
                     content = await responce.content.read()
                     f.write(content)
 
